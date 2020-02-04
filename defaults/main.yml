@@ -1,0 +1,5 @@
+---
+vnic_profiles:
+  - name: VNIC1
+    network: vlan10
+    datacenter: Default

@@ -1,0 +1,8 @@
+---
+- name: Add vNIC Profile
+  ovirt_vnic_profile:
+    name: "{{ item.name }}"
+    network: "{{ item.network }}"
+    state: present
+    data_center: "{{ item.datacenter }}"
+  loop: "{{ vnic_profiles }}"
